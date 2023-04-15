@@ -5,6 +5,7 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import dc from "../assets/img/discord-mark-white .svg"
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import git from "../assets/img/github-mark-white.svg"
 
 export const Footer = () => {
   return (
