@@ -18,6 +18,7 @@ export const Footer = () => {
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
             <a href="https://discord.com/users/1025036230741721149" target="_blank" rel="noopener noreferrer"><img src={dc} alt="" /></a>
+            <a href="https://github.com/incognito-1337/" target="_blank" rel="noopener noreferrer"><img src={git} alt="" /></a>
 
 
 <a href="https://www.instagram.com/__incognito__1337/" target="_blank" rel="noopener noreferrer" ><img src={navIcon3} alt="" /></a>
