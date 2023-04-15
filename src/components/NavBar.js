@@ -5,8 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import dc from '../assets/img/discord-mark-white .svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import { HashLink } from 'react-router-hash-link';
-import git from "../assets/img/github-mark.svg"
+import { HashLink } from 'react-router-hash-link';"
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -54,8 +53,7 @@ export const NavBar = () => {
               <div className="social-icon">
               <a href="https://discord.com/users/1025036230741721149" target="_blank" rel="noopener noreferrer"><img src={dc} alt="" /></a>
               <a href="https://github.com/incognito-1337/" target="_blank" rel="noopener noreferrer"><img src={git} alt="" /></a>
-
-                <a href="https://www.instagram.com/__incognito__1337/" target="_blank" rel="noopener noreferrer" ><img src={navIcon3} alt="" /></a>
+              <a href="https://www.instagram.com/__incognito__1337/" target="_blank" rel="noopener noreferrer" ><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
               </HashLink>
