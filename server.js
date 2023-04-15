@@ -1,24 +1,34 @@
 const express = require("express");
-const router = express.Router();
 const cors = require("cors");
-const nodemailer = require("nodemailer");
-
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Define middleware function to log IP addresses
-const logIP = (req, res, next) => {
-  console.log(`IP address: ${req.ip}`);
-  next();
-}
+// API endpoint to handle user logins
+app.post("/login", (req, res) => {
+  const ip = req.ip; // Get user's IP address
+  console.log(`User with IP address ${ip} logged in`);
+  // Perform other actions as needed
+  res.send("Login successful");
+});
 
-// Use the logIP middleware function for all routes
-app.use(logIP);
+// Start the server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
 
-// Define your routes
-app.use("/", router);
-
-app.listen(5000, () => console.log("Server Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
+fetch("/login", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    username: "johndoe",
+    password: "password123",
+  }),
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data); // "Login successful"
+  })
